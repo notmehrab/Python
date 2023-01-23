@@ -1,6 +1,8 @@
 # Python
 Using python with visual code
 
+## Git y github
+
 We have learned to use **git** and **git hub**. The most important commands are:
 
 - `git init` starts a folder
