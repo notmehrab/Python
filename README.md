@@ -12,7 +12,7 @@ We have learned to use **git** and **git hub**. The most important commands are:
 
 ## Guardar cambios en git hub
 
-Primero de todo Guardar el `file` en Visual Code
+Primero de todo Guardar el `file` en Visual Codegit status
 1. Primero `git add *`
 2. Después `git commit -m "mensaje"`
 3. Finalmete `git push origin main`
