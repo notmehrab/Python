@@ -1,21 +1,36 @@
+import random
+
 #Elegir opciones
-user = input("elige X o O: ").upper()
+user = "X"
+pc = "O"
 
-#Crear la tabla
-#casillas =[0,   1,  2, 3,  4,  5,   6, 7,  8]
-table = ["", "", "", "", "", "", "", "", "",]
+while True:
+    #Crear la tabla
+    table = ["", "", "", "", "", "", "", "", "",]
+    lista =[0,1,2,3,4,5,6,7,8,9]
 
-print(
-"| "+table[0]+"| "+table[1]+"| "+table[2]+"|\n"
-"| "+table[3]+"| "+table[4]+"| "+table[5]+"|\n"
-"| "+table[6]+"| "+table[7]+"| "+table[8]+"|\n"
-)
+    #Pedir Casilla al usuario
+    position = int(input("elige uno: "))
+    table[position] = "x"
 
-#Pedir Casilla
-position =int(input("elige una posición entre 0 a 8: "))
+    print(
+    "| "+table[0]+"| "+table[1]+"| "+table[2]+"|\n"
+    "| "+table[3]+"| "+table[4]+"| "+table[5]+"|\n"
+    "| "+table[6]+"| "+table[7]+"| "+table[8]+"|\n"
+    )
 
+    if position == lista:
+        remove.postion(lista)
 
+    #Eleccion del ordenador
+  
+    pc_position = random.choice(lista)
+    table[pc_position] = "O"
 
-#Guardar valor
-#Comprobar el ganador
-#Compronbar que no ha termindo los turnos
+    print(
+    "| "+table[0]+"| "+table[1]+"| "+table[2]+"|\n"
+    "| "+table[3]+"| "+table[4]+"| "+table[5]+"|\n"
+    "| "+table[6]+"| "+table[7]+"| "+table[8]+"|\n"
+    )
+    if pc_position == lista:
+        remove.postion(lista)
