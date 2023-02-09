@@ -1,3 +1,4 @@
+'''
 import random
 
 #Choose option
@@ -14,6 +15,8 @@ elif user_option == "O":
 table = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 lista =[0,1,2,3,4,5,6,7,8]
 turn = 0
+
+
 #Reglas
 
 
@@ -27,7 +30,7 @@ while True:
     if table[userp] == " " :
         table[userp] = user_option
         lista.remove(userp)
-        user_turn = turn + 1
+        turn + 1
     else:
         print("¡La casilla está seleccionada. Por favor, elige otra!")
         userp = int(input("elige una posición entre 0 a 8: "))
@@ -72,7 +75,7 @@ while True:
     pcp = random.choice(lista)
     table[pcp] = pc_option
     lista.remove(pcp)
-    pc_turn = n + 1
+    turn + 1
 
 #display decision
     print(
@@ -105,4 +108,9 @@ while True:
     if table[0] == table[4] == table[8] == pc_option:
         print("Has perdido")
         break
+    
+    print("Turn left: ", turn)
 
+'''
+
+    
