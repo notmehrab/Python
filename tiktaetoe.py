@@ -1,4 +1,3 @@
-'''
 import random
 
 #Choose option
@@ -14,13 +13,17 @@ elif user_option == "O":
 
 table = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 lista =[0,1,2,3,4,5,6,7,8]
+"""
+game = True
 turn = 0
-
+if turn == 9:
+    game = False
+"""
 
 #Reglas
 
 
-while True:
+while game:
 #Pedir Casilla al usuario
 
     userp = int(input("elige una posición entre 0 a 8: "))
@@ -110,7 +113,5 @@ while True:
         break
     
     print("Turn left: ", turn)
-
-'''
 
     
