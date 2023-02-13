@@ -13,12 +13,9 @@ elif user_option == "O":
 
 table = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 lista =[0,1,2,3,4,5,6,7,8]
-"""
+
 game = True
-turn = 0
-if turn == 9:
-    game = False
-"""
+
 
 #Reglas
 
@@ -78,7 +75,7 @@ while game:
     pcp = random.choice(lista)
     table[pcp] = pc_option
     lista.remove(pcp)
-    turn + 1
+
 
 #display decision
     print(
