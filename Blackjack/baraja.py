@@ -1,5 +1,5 @@
 import random
-from carta import Carta
+from main import Carta
 
 class Baraja:
     def __init__(self):
@@ -12,9 +12,17 @@ class Baraja:
             for valor in valores:
                 cartanueva = Carta(palo, valor)
                 self.cartas.append(cartanueva)
+                
     def mezclar (self):
         random.shuffle(self.cartas)
 
+    def contar(self):
+        return len(self.cartas)
+
 mibaraja = Baraja() 
+"""
 mibaraja.mezclar()
 print(mibaraja.cartas)
+"""
+numero_cartas = mibaraja.contar()
+print(numero_cartas)
