@@ -1,5 +1,4 @@
 #elegir palabra
-
 palabra_secreta = "manzana"
 
 letras_correctas = []
